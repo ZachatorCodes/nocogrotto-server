@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+# Specify Ruby version
+ruby "3.3.6"
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 8.0.1"
 # Use postgresql as the database for Active Record
@@ -33,5 +36,3 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
 end
-
-
