@@ -23,6 +23,12 @@ gem "kamal", require: false
 # Add HTTP asset caching/compression and X-Sendfile acceleration to Puma [https://github.com/basecamp/thruster/]
 gem "thruster", require: false
 
+# Use for model serializer generation
+gem "active_model_serializers", "~> 0.10.15"
+
+# Use for Active Model has_secure_password method
+gem "bcrypt", "~> 3.1"
+
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin Ajax possible
 # gem "rack-cors"
 
@@ -35,4 +41,12 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+  # Use for debugging during development
+  gem "byebug", "~> 11.1"
+end
+
+group :development do
+  # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
+  gem "spring"
 end
